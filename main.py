@@ -15,8 +15,6 @@ size = [1872,1404]
 canvas = pygame.Surface(size)
 sysfont = pygame.font.SysFont('notosansmonocjksc', 80)
 
-pygame.display.set_caption("example")
-
 canvas.fill(WHITE)
 
 helloText = sysfont.render(u'HaLakeイベント情報', False, BLACK)
