@@ -6,6 +6,10 @@
 pip install pygame pytz python-connpass
 ```
 
+```
+sudo apt install fonts-noto
+```
+
 # Run
 
 ```
