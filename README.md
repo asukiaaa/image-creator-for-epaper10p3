@@ -3,7 +3,7 @@
 # Setup
 
 ```
-pip install pygame pytz python-connpass
+pip install pygame pytz python-connpass python-dateutil
 ```
 
 ```
