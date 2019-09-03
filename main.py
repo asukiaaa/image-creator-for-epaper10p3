@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import pygame
 import connpass_event_filter as cef
+from datetime import datetime
+import pytz
 from dateutil import parser
 
 pygame.init()
@@ -52,6 +54,11 @@ for event in events:
     infoBlock = sysfont.render(infoText, False, BLACK)
     canvas.blit(infoBlock, (0, currentCursor))
     currentCursor += wordYStep + sectionYStep
+
+jpNow = datetime.now(pytz.timezone('Asia/Tokyo'))
+currentTimeStr = get_datetime_str(jpNow)
+updatedTimeText = sysfont.render(currentTimeStr + u'更新', False, BLACK)
+canvas.blit(updatedTimeText, (0, currentCursor))
 
 pygame.image.save(canvas, 'events.bmp')
 
