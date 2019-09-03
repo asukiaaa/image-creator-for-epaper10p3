@@ -16,6 +16,26 @@ sudo apt install fonts-noto
 python main.py
 ```
 
+# Set as crontab job to show image on epaper with using IT8951
+
+## Setup package for root
+
+```
+sudo su
+pip install pygame pytz python-connpass python-dateutil
+```
+
+## Set crontab job
+
+```
+sudo crontab -e
+```
+
+Every 30 minutes
+```
+*/30 * * * * cd /home/pi/gitprojects/image-creator-for-epaper10p3 && /usr/bin/python main.py && /home/pi/gitprojects/IT8951/IT8951 0 0 events.bmp
+```
+
 # License
 
 MIT
