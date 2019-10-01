@@ -60,5 +60,6 @@ currentTimeStr = get_datetime_str(jpNow)
 updatedTimeText = sysfont.render(currentTimeStr + u'更新', False, BLACK)
 canvas.blit(updatedTimeText, (0, currentCursor))
 
+canvas = pygame.transform.rotate(canvas, 180)
 pygame.image.save(canvas, 'events.bmp')
 
