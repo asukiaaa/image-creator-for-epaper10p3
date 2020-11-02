@@ -13,7 +13,7 @@ pygame.init()
 BLACK = (  0,   0,   0)
 WHITE = (255, 255, 255)
 
-# fontFamily = 'Noto Sans Mono CJK JP'
+fontFamily = 'notosanscjkjp'
 size = [1872,1404]
 canvas = pygame.Surface(size)
 fontM = pygame.font.SysFont(fontFamily, 80)
