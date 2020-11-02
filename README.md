@@ -3,11 +3,11 @@
 # Setup
 
 ```
-pip install pygame pytz python-connpass python-dateutil
+pip install -r requirements.txt
 ```
 
 ```
-sudo apt install fonts-noto
+sudo apt install fonts-noto libsdl2-ttf2.0-0
 ```
 
 # Run
