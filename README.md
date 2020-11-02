@@ -22,7 +22,7 @@ python main.py
 
 ```
 sudo su
-pip install pygame pytz python-connpass python-dateutil
+pip install -r requirements.txt
 ```
 
 ## Set crontab job
